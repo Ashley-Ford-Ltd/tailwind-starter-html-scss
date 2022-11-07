@@ -1,0 +1,19 @@
+{
+  "name": "vs-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/tailwind.css -o ./dist/css/tailwind.css --watch & sass --watch --update --style=expanded src/scss:dist/css",
+    "build": "npx tailwindcss -i ./src/tailwind.css -o ./dist/css/tailwind.css --minify & sass --style compressed src/scss:dist/css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.56.0"
+  }
+}
